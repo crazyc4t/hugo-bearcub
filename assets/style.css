@@ -4,7 +4,7 @@ body {
   padding: 20px;
   max-width: 720px;
   text-align: left;
-  background-color: #1d1f27;
+  background-color: #1a212e;
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
@@ -23,7 +23,7 @@ b {
 }
 
 a {
-  color: #8cc2dd;
+  color: #8bcd5b;
 }
 
 .title {
@@ -38,6 +38,7 @@ a {
 .title span {
   font-weight: 400;
 }
+
 
 nav a {
   margin-right: 10px;
