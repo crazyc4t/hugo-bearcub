@@ -1,7 +1,12 @@
 {{ define "main" }}
 <content>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
   {{ if .Data.Singular }}
-    <h3 class="blog-filter">{{ i18n "filtering-for" }} "{{ .Title }}"</h3>
+  <h3 class="blog-filter">{{ i18n "filtering-for" }} "{{ .Title }}"</h3>
   {{ end }}
   <ul class="blog-posts">
     {{ range .Pages }}
@@ -14,23 +19,21 @@
         </i>
       </span>
       {{ if .Params.link }}
-        <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a>
+      <a href="{{ .Params.link }}" target="_blank">{{ .Title }}</a>
       {{ else }}
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
       {{ end }}
     </li>
     {{ else }}
-    <li>
-      {{ i18n "no-posts" }}
-    </li>
+    <li>{{ i18n "no-posts" }}</li>
     {{ end }}
   </ul>
   {{ if not .Data.Singular }}
-    <div>
-      {{ range .Site.Taxonomies.tags }}
-        <a class="blog-tags" href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>&nbsp;&nbsp;
-      {{ end }}
-    </div>
+  <div>
+    {{ range .Site.Taxonomies.tags }}
+    <a class="blog-tags" href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a
+    >&nbsp;&nbsp; {{ end }}
+  </div>
   {{ end }}
 </content>
 {{ end }}
