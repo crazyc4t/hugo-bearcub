@@ -1,10 +1,10 @@
 name = "Bear Cub"
-license = "MIT"
-licenselink = "https://github.com/clente/hugo-bearcub/blob/master/LICENSE"
+license = "GPL-3.0"
+licenselink = "https://github.com/crazyc4t/hugo-bearcub/blob/master/LICENSE"
 description = "Theme description"
 
 # The home page of the theme, where the source can be found.
-homepage = "https://github.com/clente/hugo-bearcub"
+homepage = "https://github.com/crazyc4t/hugo-bearcub"
 
 # If you have a running demo of the theme.
 demosite = "https://clente.github.io/hugo-bearcub"
@@ -14,16 +14,16 @@ features = ["favicon", "seo", "no javascript", "rss", "social cards"]
 
 # If the theme has a single author
 [author]
-    name = "Caio Lente"
-    homepage = "https://lente.dev"
+name = "Said Neder"
+homepage = "https://saidneder.ca"
 
 # If porting an existing theme
 [original]
-    author = "Jan Raasch"
-    homepage = "https://www.janraasch.com"
-    repo = "https://github.com/janraasch/hugo-bearblog"
+author = "Jan Raasch"
+homepage = "https://www.janraasch.com"
+repo = "https://github.com/janraasch/hugo-bearblog"
 
 # Hugo versions the theme supports
 [module]
-  [module.hugoVersion]
-    min = "0.90"
+[module.hugoVersion]
+min = "0.90"
